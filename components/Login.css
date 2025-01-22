@@ -1,0 +1,158 @@
+/* Arrière-plan global (body) avec un dégradé */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #350178, #5200a3, #6600ff, #3e00b3, #0b017b); /* Dégradé violet avec plus de couleurs */
+    color: #ffffff; /* Couleur du texte par défaut */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+/* Conteneur global */
+.financial-app {
+    position: relative;
+    max-width: 80%; /* Réduit la largeur pour plus d'espace */
+    margin: 40px auto;
+    padding: 5%;
+    border: 6px solid #ffffff; /* Augmenté l'épaisseur du bord */
+    background: rgba(245, 242, 242, 0.1); /* Fond clair */
+    box-sizing: border-box;
+}
+
+/* Centrer le formulaire sur la page */
+.custom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    margin: 0;
+    width: 400px;
+}
+
+/* Style du conteneur de la carte avec un dégradé (sans transparence) */
+.custom-card {
+    padding: 30px;
+    background: linear-gradient(135deg, #350178, #5200a3, #6600ff, #3e00b3); /* Dégradé avec des couleurs violettes accentuées */
+    border-radius: 15px; /* Bords plus arrondis */
+    width: 100%;
+    max-width: 550px; /* Largeur légèrement augmentée */
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 5px solid #fff; /* Bordure blanche plus épaisse */
+}
+
+/* Style du titre */
+.custom-title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #fff; /* Couleur du texte en blanc */
+    margin-bottom: 20px;
+}
+
+/* Groupement des champs de saisie */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Style des labels */
+.input-label {
+    display: block;
+    font-size: 1rem;
+    color: #fff; /* Labels en blanc */
+    margin-bottom: 8px;
+}
+
+/* Style des champs de saisie */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #050505;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+/* Changement de bordure au focus sur les champs */
+.input-field:focus {
+    border:2px solid #090909;
+    outline: none;
+}
+
+/* Style du bouton de soumission */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Changement de couleur du bouton au survol */
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries pour la réactivité */
+
+/* Adaptation pour les écrans de petite taille */
+@media screen and (max-width: 768px) {
+    .financial-app {
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .custom-container {
+        width: 90%;
+    }
+
+    .custom-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .custom-title {
+        font-size: 1.5rem;
+    }
+
+    .input-field {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+    }
+}
+
+/* Adaptation pour les très petits écrans (mobiles) */
+@media screen and (max-width: 480px) {
+    .custom-container {
+        width: 100%;
+    }
+
+    .custom-card {
+        padding: 15px;
+    }
+
+    .custom-title {
+        font-size: 1.25rem;
+    }
+
+    .input-field {
+        font-size: 0.85rem;
+    }
+
+    .submit-btn {
+        font-size: 0.95rem;
+    }
+}
